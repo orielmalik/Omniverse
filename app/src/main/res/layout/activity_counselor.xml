@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Counselor Tips and Services"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tips Section -->
+    <TextView
+        android:id="@+id/text_tips_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helpful Tips"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_tip_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip 1: Insert helpful tip here."
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_tip_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip 2: Insert helpful tip here."
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Services Section -->
+    <TextView
+        android:id="@+id/text_services_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Services"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_service_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service 1: Counseling sessions"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_service_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service 2: Group therapy"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Additional Information Section -->
+    <TextView
+        android:id="@+id/text_additional_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For more information, contact us at: "
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/einfo"
+
+        android:layout_width="390dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="100dp"
+        android:text="Write"
+android:textSize="39sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/binfo"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="submit"
+        />
+</LinearLayout>

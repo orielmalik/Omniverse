@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_man"  />  <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="John Doe" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_sentmes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_sentmes" />
+    </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/imageButtonFacetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/verticalLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/layoutButtons"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/textViewMessage1"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#F4E6E6"
+            android:maxWidth="240dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Message 1"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewMessage2"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#F4E6E6"
+            android:maxWidth="240dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Message 2"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewMessage3"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#F4E6E6"
+            android:maxWidth="240dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Message 3"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewMessage4"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#F4E6E6"
+            android:maxWidth="240dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Message 4"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewMessage5"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#F4E6E6"
+            android:maxWidth="240dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Message 5"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_consluer" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_quiz" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_buygift" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#D6A9A9"
+            android:src="@drawable/ic_londoneye" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Type a message..."
+        android:imeOptions="actionSend"
+        android:background="?attr/selectableItemBackground"
+        android:drawableRight="@drawable/ic_video"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_marginBottom="59dp"
+        android:padding="16dp" />
+</RelativeLayout>

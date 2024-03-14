@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/bckmain"
+    tools:context=".MainActivity">
+
+
+
+<com.google.android.material.textview.MaterialTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="        OMNIVERSE \n \n \n      "
+    android:textSize="45sp"
+    />
+
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/btns"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="333dp"
+
+    >
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/btn_loginmain"
+       android:layout_width="114dp"
+       android:layout_height="45dp"
+       android:layout_marginLeft="24dp"
+       android:text="login"
+       android:textSize="18sp"
+
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_registermain"
+        android:layout_width="134dp"
+       android:layout_height="45dp"
+android:layout_marginLeft="94dp"
+        android:text="register"
+        android:textSize="18sp"
+
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
