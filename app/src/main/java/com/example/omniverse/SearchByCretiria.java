@@ -64,15 +64,16 @@ public class SearchByCretiria extends AppCompatActivity implements SearchView.On
 
     @Override
     public boolean onQueryTextSubmit(String s) {
-        return false;
+        if(!s.isEmpty()||s!=null) {
+            search(s);
+            Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 
     @Override
     public boolean onQueryTextChange(String s) {
-         if(!s.isEmpty()||s!=null) {
-             search(s);
-             Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
-         }
+
         return false;
     }
 
@@ -94,18 +95,18 @@ public class SearchByCretiria extends AppCompatActivity implements SearchView.On
             public void onResponse(Call<List<MiniAppCommandBoundary>> call, Response<List<MiniAppCommandBoundary>> response) {
                 if(response.isSuccessful())
                 {
-                    Log.d(null, "invokeRes: "+response.body().get(0).getCommandAttributes().get("results").toString());
-                    ArrayList<MiniAppCommandBoundary>mlst=(ArrayList<MiniAppCommandBoundary>)response.body();
-                    lst =new ArrayList<>();
-                    try{
+                    if(response.body().get(0).getCommandAttributes().containsKey("results")&&response.body().get(0)!=null) {
+                        Log.d(null, "invokeRes: " + response.body().get(0).getCommandAttributes().get("results").toString());
+                        ArrayList<MiniAppCommandBoundary> mlst = (ArrayList<MiniAppCommandBoundary>) response.body();
+                        lst = new ArrayList<>();
+                        try {
 
-                       fillList( mlst.get(0).getCommandAttributes(),lst);
+                            fillList(mlst.get(0).getCommandAttributes(), lst);
 
-                    }catch (NullPointerException nullPointerException)
-                    {
-                        Toast.makeText(context, nullPointerException.getMessage(), Toast.LENGTH_SHORT).show();
+                        } catch (NullPointerException nullPointerException) {
+                            Toast.makeText(context, nullPointerException.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
                     }
-
 
                     ObjectEntityAdapter objectEntityAdapter=new ObjectEntityAdapter(context,lst);
                     listViewResults.setAdapter(objectEntityAdapter);

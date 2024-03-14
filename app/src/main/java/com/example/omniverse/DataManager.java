@@ -32,7 +32,7 @@ public class DataManager {
 
     public DataManager() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://localhost:8085")
+                .baseUrl("http//:localhost:8085")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         api = retrofit.create(RestApi.class);

@@ -44,7 +44,7 @@ public class ObjectEntityAdapter extends ArrayAdapter<ObjectEntity> {
         // Set the text for other TextViews based on ObjectEntity properties
 
         String genderString = objectEntity.getGender() ? "Male" : "Female";
-        textViewName.setText( objectEntity.getAlias() + "gender"+ genderString);
+        textViewName.setText( objectEntity.getAlias() + "::"+ genderString);
         // Set other properties accordingly
         view.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -37,7 +37,7 @@ public class Quiz extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_quiz);
         LottieAnimationView animationView = findViewById(R.id.lottieAnimationView);
-        animationView.setSpeed(1.5f);
+        animationView.setSpeed(0.5f);
         context=this;
         animationView.playAnimation();
         dataManager = new DataManager();
